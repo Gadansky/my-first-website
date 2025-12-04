@@ -1,0 +1,74 @@
+.dock {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: min(420px, 92vw);
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: #0a0f1f;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  z-index: 40;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--stroke);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.button {
+  border: 1px solid var(--stroke);
+  border-radius: 10px;
+  padding: 6px 10px;
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wipe {
+  border-color: rgba(246, 93, 129, 0.4);
+  background: rgba(246, 93, 129, 0.12);
+  color: #ffc2d3;
+}
+
+.body {
+  padding: 12px;
+  color: #c3d2ff;
+  font-family: "Geist Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  background: linear-gradient(180deg, #0a0f1f, #0b1224);
+  max-height: 320px;
+  overflow: auto;
+}
+
+.body pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.error {
+  margin-top: 8px;
+  color: #ffb3c1;
+  font-size: 12px;
+}
